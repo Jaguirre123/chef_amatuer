@@ -1,0 +1,21 @@
+<h1>new recipe</h1>
+
+<%= form_for @recipe url: recipe_path, html: {multipart: true} do |f| %>
+<div class="input-field col s6">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+</div> 
+<div class="input-field col s6">
+    <%= f.label :content %>
+    <%= f.text_field :content%>
+</div>
+<div class="input-field col s6">
+    <%= f.label :category %>
+    <%= f.text_field :category%>
+</div>
+<div class="input-field col s6">
+    <%= f.label  %>
+    <%= f.file_field_tag, :image, class: 'dish'%>
+</div>
+    <%= f.submit %>
+<% end %>

@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 20180413004749) do
     t.string "title"
     t.string "category"
     t.bigint "user_id"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_recipes_on_user_id"
@@ -47,6 +50,9 @@ ActiveRecord::Schema.define(version: 20180413004749) do
     t.text "bio"
     t.string "email"
     t.string "password_digest"
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

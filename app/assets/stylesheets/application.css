@@ -13,3 +13,60 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+    box-sizing: border-box;   
+}
+ 
+ html, body {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.nav-extended{
+    background-color: tomato !important;
+    border: 1px black solid;
+    font-family: 'impact';
+ }
+
+ .tab a{
+     font-size: 20px !important;
+ }
+
+
+ .meals {
+     text-align: center;
+     font-family: Impact;
+     color: black;
+     text-shadow: 0 3px 6px black;
+     -webkit-text-stroke: 1px tomato;
+ }
+
+ /***********
+ WELCOME.HTML.ERB
+ ***********/
+#mainpg {
+    width: 95%;
+    background-color: floralwhite;
+    border: black 3px groove;
+    border-radius: 10px;
+    margin: 100px auto 0 auto;
+    box-shadow: 0 0 30px black;
+    -webkit-text-stroke: 1px black;
+}
+
+.pgsh {
+    font-family:  'Lobster', cursive;
+    /* line-height: 1; */
+    color: tomato;
+    text-shadow: 0 2px 2px black;
+    text-align: center;
+}
+
+.welinks {
+    text-align: center;
+}
+
+.first_links {
+    color: black;
+}

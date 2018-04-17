@@ -1,0 +1,14 @@
+<h3><%= current_user.name %></h3>
+<%= link_to "New Recipe", new_recipe_path %>
+<table class="table">
+    <tbody>
+    <tr>
+        <th>Recipe Title</th>
+    </tr>
+    <% current_user.recipes.each do |recipe| %>
+        <tr>
+            <td><%= link_to recipe.title, recipe_path(recipe) %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>

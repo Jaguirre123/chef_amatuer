@@ -1,0 +1,17 @@
+<h3><%= @user.name %></h3>
+<%= link_to "New Recipe", new_recipe_path %>
+<table class="table">
+    <tbody>
+    <tr>
+        <th>Recipe Title</th>
+        <th>Category</th>
+    </tr>
+    </tr>
+    <% @user.recipes.each do |recipe| %>
+        <tr>
+            <td><%= link_to recipe.title, recipe_path(recipe) %></td>
+            <td><%= recipe.category %></td>
+        </tr>
+    <% end %>
+    </tbody>
+</table>
