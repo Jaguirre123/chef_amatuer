@@ -1,16 +1,29 @@
-<h3><%= @user.name %></h3>
-<%= link_to "New Recipe", new_recipe_path %>
+<p id="notice"><%= notice %></p>
+<% if current_user.id == @user.id %> 
+    <h3><%= @user.name %></h3>
+    <%= link_to "New Recipe", new_recipe_path %>
+  <% else %>
+    <h3>Welcome to <%= @user.name %>'s Kitchen</h3>
+<% end %>
 <table class="table">
     <tbody>
     <tr>
         <th>Recipe Title</th>
         <th>Category</th>
+        <% if current_user.id == @user.id %>
+            <th>Edit</th>
+            <th>Delete</th>
+        <% end %>
     </tr>
     </tr>
     <% @user.recipes.each do |recipe| %>
         <tr>
             <td><%= link_to recipe.title, recipe_path(recipe) %></td>
             <td><%= recipe.category %></td>
+            <% if current_user.id == @user.id %>
+                <td><%= link_to "E", edit_recipe_path(recipe), class: "btn" %></td>
+                <td><%= link_to "X", recipe_path(recipe), method: :delete, class: "btn" %></td>
+            <% end %>
         </tr>
     <% end %>
     </tbody>

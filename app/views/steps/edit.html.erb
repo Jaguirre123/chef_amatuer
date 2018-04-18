@@ -1,0 +1,9 @@
+<h3>Edit Step</h3>
+
+<%= form_for @step do |f| %>
+<div class="input-field col s6">
+    <%= f.label "Edit step" %>
+    <%= f.text_field :content%>
+    <%= f.submit%>
+</div>
+<% end %>

@@ -1,0 +1,9 @@
+<h3>Edit Recipe</h3>
+
+<%= form_for @recipe do |f| %>
+<div class="input-field col s6">
+    <%= f.label "Edit Recipe name" %>
+    <%= f.text_field :title%>
+    <%= f.submit%>
+</div>
+<% end %>

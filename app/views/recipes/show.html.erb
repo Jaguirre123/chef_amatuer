@@ -1,1 +1,27 @@
-<h3 class="meals"><%= @recipes.title %></h3>
+<div class="recipe">
+    <h3 class="meals"><%= @recipe.title %></h3>
+    <hr>
+    <%=image_tag @recipe.image, class:'recipeImgs' %>
+</div>
+<% if @recipe.steps.count == 0 %>
+    <h5>No Steps for Recipe Yet</h5>
+<% else %>
+    <table>
+        <% @recipe.steps.each_with_index do |step, i| %>
+            <tr>
+                <td><%= i + 1 %></td>
+                <td><%= step.content%></td>
+                <td><%= link_to "E", edit_step_path(step), class: "btn" %></td>
+                <td><%= link_to "X", step_path(step), method: :delete, class: "btn" %></td>
+            </tr>
+        <% end %>
+    </table>
+<% end %>
+
+<%= form_for [@recipe, @step] do |f| %>
+<div class="input-field col s6">
+    <%= f.label "Add a step" %>
+    <%= f.text_field :content%>
+    <%= f.submit%>
+</div>
+<% end %>

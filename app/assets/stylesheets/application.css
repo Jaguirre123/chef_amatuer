@@ -33,13 +33,35 @@
      font-size: 20px !important;
  }
 
+ .recipe {
+    margin: 20px;
+    text-align: center;
+    background-color: tomato;
+    width: 40%;
+    border: 3px inset black;
+    border-radius: 10px;
+    height: 345px;
+    box-shadow: 0 0 18px black;
+ }
 
  .meals {
      text-align: center;
-     font-family: Impact;
+     font-family: signpainter;
      color: black;
      text-shadow: 0 3px 6px black;
      -webkit-text-stroke: 1px tomato;
+     background-color: azure;
+     border: 1px black solid;
+     box-shadow: inset 0 0 6px black
+ }
+
+.recipeImgs {
+    width: 300px;
+    margin-top: 20px;
+ }
+
+ .fileInput {
+     margin-top: 45px;
  }
 
  /***********
@@ -69,4 +91,11 @@
 
 .first_links {
     color: black;
+}
+
+@media (max-width: 700px) {
+    .recipe {
+        width: 85%;
+        margin: 15px auto 0 auto;
+     }
 }

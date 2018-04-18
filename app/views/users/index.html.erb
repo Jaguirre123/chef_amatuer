@@ -1,7 +1,6 @@
 
-<p id="notice"><%= notice %></p>
 
-<h1>All Chef Amatuers</h1>
+<h1>All Chef Amateurs</h1>
 
 <hr>
 <table>
@@ -17,7 +16,7 @@
   <tbody>
     <% @user.each do |user| %>
       <tr>
-        <td><%= link_to user.name, recipe_path  %></td>
+        <td><%= link_to user.name, user_path(user)  %></td>
         <td><%= user.specialty %></td>
         <td><%= user.email %></td>
       </tr>
