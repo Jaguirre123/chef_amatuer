@@ -1,23 +1,26 @@
 
 
-<h1>All Chef Amateurs</h1>
+<h1>All Chefs</h1>
 
 <hr>
-<table>
+<table class="table highlight">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Specialty</th>
-      <th>email</th>
+      <th><i class="material-icons">person</i> Name</th>
+      <th><i class="material-icons">restaurant</i> Specialty</th>
+      <th><i class="material-icons">local_dining</i> Recipes</th>
+      <th><i class="material-icons">email</i> email</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
+
   <tbody>
     <% @user.each do |user| %>
       <tr>
-        <td><%= link_to user.name, user_path(user)  %></td>
+        <td><%= link_to user.name, user_path(user) %></td>
         <td><%= user.specialty %></td>
+        <td><%= user.recipes.count %></td>
         <td><%= user.email %></td>
       </tr>
     <% end %>

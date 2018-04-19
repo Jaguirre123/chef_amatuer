@@ -10,7 +10,7 @@ class RecipesController < ApplicationController
     end
 
     def create
-        @recipe = Recipe.new(params.require(:recipe).permit(:title, :content, :category, :image))
+        @recipe = Recipe.new(params.require(:recipe).permit(:title, :category, :image))
         @recipe.user = current_user
          if @recipe.save
             redirect_to recipe_path(@recipe)
@@ -32,7 +32,7 @@ class RecipesController < ApplicationController
     
     def update 
         @recipe = Recipe.find(params[:id])
-        @recipe.update_attributes(params.require(:recipe).permit(:title))
+        @recipe.update_attributes(params.require(:recipe).permit(:title, :category))
         redirect_to user_path(current_user)
     end
 end

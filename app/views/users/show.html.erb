@@ -1,30 +1,65 @@
 <p id="notice"><%= notice %></p>
-<% if current_user.id == @user.id %> 
-    <h3><%= @user.name %></h3>
-    <%= link_to "New Recipe", new_recipe_path %>
-  <% else %>
-    <h3>Welcome to <%= @user.name %>'s Kitchen</h3>
-<% end %>
-<table class="table">
+
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+            <%=image_tag @user.image, class:'userImgs' %>
+            <hr>
+        </div>
+        <% if current_user == @user %> 
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><h3 class="userNames"><%= @user.name %></h3><i class="material-icons right">more_vert</i></span>
+            </div>
+        <% else %>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4"><h3 class="userNames">Welcome to <%= @user.name %>'s Kitchen</h3><i class="material-icons right">more_vert</i></span>
+            </div>
+        <% end %>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"><%= @user.name %>'s Bio<i class="material-icons right">close</i></span>
+            <hr>
+            <p><%= @user.bio %></p>
+        </div>
+   </div>
+   <% if current_user == @user %> 
+        <center class="recCenterTag">
+            <%= link_to new_recipe_path, class: 'newRecLink' do %>
+                <i class="material-icons">add</i> New Recipe
+            <% end %>
+        </center>
+    <% end %>
+<% if @user.recipes.count == 0 %>
+    <h3 class="noRec"><%= @user.name%> has no recipes at the moment</h3>
+<% else %>
+<table class="table highlight">
     <tbody>
     <tr>
         <th>Recipe Title</th>
         <th>Category</th>
-        <% if current_user.id == @user.id %>
+        <% if current_user == @user %>
             <th>Edit</th>
             <th>Delete</th>
         <% end %>
     </tr>
-    </tr>
+
     <% @user.recipes.each do |recipe| %>
         <tr>
             <td><%= link_to recipe.title, recipe_path(recipe) %></td>
             <td><%= recipe.category %></td>
-            <% if current_user.id == @user.id %>
-                <td><%= link_to "E", edit_recipe_path(recipe), class: "btn" %></td>
-                <td><%= link_to "X", recipe_path(recipe), method: :delete, class: "btn" %></td>
+            <% if current_user == @user %>
+                <td>
+                    <%= link_to edit_recipe_path(recipe), class: "btn" do %>
+                        <i class="material-icons">edit</i>
+                    <% end %>
+                </td>
+                <td>
+                    <%= link_to recipe_path(recipe), method: :delete, :data=> {:confirm=>'Are you sure you want to delete this recipe?'},  class: "btn" do %>
+                        <i class="material-icons">delete_forever</i>
+                    <% end %>
+                </td>
             <% end %>
         </tr>
     <% end %>
     </tbody>
 </table>
+<% end %>

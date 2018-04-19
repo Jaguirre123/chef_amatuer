@@ -3,14 +3,11 @@
   <head>
     <title>ChefAmatuer</title>
     <%= csrf_meta_tags %>
-    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lobster" rel="stylesheet">
@@ -18,18 +15,27 @@
 
   <body>
     <% if current_user %>
-    <h1 class="pgsh">Chef Amateur</h1>
-        <nav class="nav-extended">
-            <div class="nav-content">
-              <ul class="tabs tabs-transparent">
-                <li class="tab"><%= link_to "My Recipes", user_path(current_user)%></li>
-                <li class="tab"><%= link_to "Other Chefs", users_path%></li>
-                <li class="tab"><%= link_to 'Log Out', session_path('dummy'), method: :delete, :class => 'logout' %></li>
-              </ul>
-            </div>
-          </nav>
-          
+    <header>
+      <h1 class="pgsh">Chef Amateur</h1>
+      <i class="material-icons logo">local_dining</i>
+          <nav class="nav-extended">
+              <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                  <li class="tab"><%= link_to "My Recipes", user_path(current_user)%></li>
+                  <li class="tab"><%= link_to "Other Chefs", users_path%></li>
+                  <li class="tab"><%= link_to 'Log Out', session_path('dummy'), method: :delete, :class => 'logout' %></li>
+                </ul>
+              </div>
+            </nav>
+    </header>
     <% end %>
     <%= yield %>
+    <footer>
+      <p>&copy; Chef Amateur By Jesse Aguirre GA-DT-57</p>
+      <div class="web">
+        <a href="https://github.com/Jaguirre123?tab=repositories" class="icons"><span class="fab fa-github-square"></span></a>
+        <a href="https://www.linkedin.com/in/jesse-aguirre-405b47156/" class="icons"><span class="fab fa-linkedin"></span></a>
+      </div>
+    </footer>
   </body>
 </html>
