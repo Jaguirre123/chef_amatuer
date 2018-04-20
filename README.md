@@ -20,7 +20,7 @@ to share there recipes and to view and try others. This app allows you to post, 
 * Ruby on Rails
 
 
-## Link to Game
+## Link to App
 
 [Click here to View app!](https://chefamateur.herokuapp.com/)
 
