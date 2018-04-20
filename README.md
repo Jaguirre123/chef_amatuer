@@ -3,14 +3,14 @@
 Web App for everybody who likes to cook 
 to share there recipes and to view and try others.
 
-##ScreenShots
-<img src="https://imgur.com/ivtwWPA"/>
+## ScreenShots
+<img src="https://i.imgur.com/ivtwWPA.png"/>
 <br>
-<img src="https://imgur.com/cuRZEKl"/>
+<img src="https://i.imgur.com/cuRZEKl.png"/>
 <br>
-<img src="https://imgur.com/IHRCrJl"/>
+<img src="https://i.imgur.com/IHRCrJl.png"/>
 <br>
-<img src="https://imgur.com/VLhUkN3"/>
+<img src="https://i.imgur.com/VLhUkN3.png"/>
 
 
 ## Technologies Used
@@ -22,7 +22,7 @@ to share there recipes and to view and try others.
 
 ## Link to Game
 
-[Click here to play!](http://Jaguirre123.github.io/Project_1_connect4)
+[Click here to play!](https://chefamateur.herokuapp.com/)
 
 
 ## Next Step
