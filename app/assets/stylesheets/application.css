@@ -332,13 +332,15 @@ RECIPES DIR
 
 @media (max-width: 1000px) {
     .card{
-        width: 85% !important;
+        width: 75% !important;
         margin: 0 auto !important;
      }
 
      .card img {
-         width: 95% !important;
-         max-width: 95% !important;
+         width: 55% !important;
+         max-width: 55% !important;
+         max-height: 250px !important;
+         height: 250px !important;
      }
 
      .recipeImgs {
@@ -380,9 +382,11 @@ RECIPES DIR
          font-size: 12px !important;
      }
 
-     .userImgs {
+    .card img {
          max-height: 250px !important;
          height: 250px !important;
+         width: 95% !important;
+         max-width: 95% !important;
      }
 }
 
