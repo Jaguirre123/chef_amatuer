@@ -27,3 +27,5 @@ to share there recipes and to view and try others.
 
 ## Next Step
 * Add Comments for recipe feature
+* Allow user to edit profile
+* Allow user to delete profile 
