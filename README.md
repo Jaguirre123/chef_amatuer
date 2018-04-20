@@ -1,24 +1,29 @@
-# README
+# Chef Amateur
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web App for everybody who likes to cook 
+to share there recipes and to view and try others.
 
-Things you may want to cover:
+##ScreenShots
+<img src="https://imgur.com/ivtwWPA"/>
+<br>
+<img src="https://imgur.com/cuRZEKl"/>
+<br>
+<img src="https://imgur.com/IHRCrJl"/>
+<br>
+<img src="https://imgur.com/VLhUkN3"/>
 
-* Ruby version
 
-* System dependencies
+## Technologies Used
 
-* Configuration
+* HTML
+* CSS/Materialize
+* Ruby on Rails
 
-* Database creation
 
-* Database initialization
+## Link to Game
 
-* How to run the test suite
+[Click here to play!](http://Jaguirre123.github.io/Project_1_connect4)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+## Next Step
+* Add Comments for recipe feature
