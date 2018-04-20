@@ -324,41 +324,41 @@ RECIPES DIR
 @media (max-width: 1400px) {
     .card {
         width: 85% !important;
-        margin: 0px auto;
+        margin: 0px auto !important;
      }
 }
 
 @media (max-width: 1000px) {
     .card{
         width: 85% !important;
-        margin: 0 auto;
+        margin: 0 auto !important;
      }
 
      .card img {
-         width: 95%;
+         width: 95% !important;
          max-width: 95% !important;
      }
 
      .recipeImgs {
-        max-width: 100%;
-        width: 95%;
+        max-width: 100% !important;
+        width: 95% !important;
         max-height: 230px !important;
     }
 }
 
 @media (max-width: 700px) {
     .welcomeP {
-        font-size: 23px;
+        font-size: 23px !important;
     }
 
     .recipe {
-        width: 95%;
-        margin: 15px auto;
+        width: 95% !important;
+        margin: 15px auto !important;
      }
 
      .recipeImgs {
-         max-width: 100%;
-         width: 95%;
+         max-width: 100% !important;
+         width: 95% !important;
          max-height: 230px !important;
      }
 
@@ -367,15 +367,15 @@ RECIPES DIR
      }
 
      table {
-         width: 100%;
+         width: 100% !important;
      }
 
      th {
-        font-size: 15px;
+        font-size: 15px !important;
     }
 
      td {
-         font-size: 12px;
+         font-size: 12px !important;
      }
 }
 
