@@ -19,6 +19,9 @@ to share there recipes and to view and try others. This app allows you to post, 
 * CSS/Materialize
 * Ruby on Rails
 
+## Link to Trello Planning
+
+[Click here to View app!](https://trello.com/b/diYf7Gab/project-2)
 
 ## Link to App
 
