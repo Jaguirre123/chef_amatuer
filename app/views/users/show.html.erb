@@ -28,8 +28,8 @@
             <% end %>
         </center>
     <% end %>
-<% if @user.recipes.count == 0 %>
-    <h3 class="noRec"><%= @user.name%> has no recipes at the moment</h3>
+<% if @user && @user.recipes.count == 0 %>
+    <h3 class="noRec">There Are No Recipes</h3>
 <% else %>
 <table class="table highlight">
     <tbody>
