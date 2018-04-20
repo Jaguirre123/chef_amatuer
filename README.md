@@ -4,7 +4,7 @@ Web App for everybody who likes to cook
 to share there recipes and to view and try others.
 
 ## ScreenShots
-<img src="https://i.imgur.com/ivtwWPA.png"/>
+<img src="https://i.imgur.com/9BPkWId.png"/>
 <br>
 <img src="https://i.imgur.com/cuRZEKl.png"/>
 <br>
