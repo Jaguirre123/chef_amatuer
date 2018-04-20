@@ -22,7 +22,7 @@ to share there recipes and to view and try others. This app allows you to post, 
 
 ## Link to Game
 
-[Click here to play!](https://chefamateur.herokuapp.com/)
+[Click here to View app!](https://chefamateur.herokuapp.com/)
 
 
 ## Next Step
