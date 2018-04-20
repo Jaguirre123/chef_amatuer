@@ -21,7 +21,7 @@ to share there recipes and to view and try others. This app allows you to post, 
 
 ## Link to Trello Planning
 
-[Click here to View app!](https://trello.com/b/diYf7Gab/project-2)
+[Click here to View apps planning!](https://trello.com/b/diYf7Gab/project-2)
 
 ## Link to App
 
