@@ -274,6 +274,8 @@ RECIPES DIR
  .userImgs {
      max-width: 300px;
      width: 300px !important;
+     max-height: 285px;
+     height: 285px;
      margin: 0 auto !important;
      border: 2px inset tomato;
      border-radius: 10px;
@@ -376,6 +378,11 @@ RECIPES DIR
 
      td {
          font-size: 12px !important;
+     }
+
+     .userImgs {
+         max-height: 250px !important;
+         height: 250px !important;
      }
 }
 
