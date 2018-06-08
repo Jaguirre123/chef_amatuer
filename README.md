@@ -25,6 +25,11 @@ to share there recipes and to view and try others. This app allows you to post, 
 
 ## Link to App
 
+* To try out Chef Amateur login with this information
+* Email: user@email.com
+* Password: demo
+
+
 [Click here to View app!](https://chefamateur.herokuapp.com/)
 
 
